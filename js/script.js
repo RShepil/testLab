@@ -1,11 +1,13 @@
 // Бургер-меню
-const iconMenu = document.querySelector('.menu-icon')
+const iconMenu = document.querySelector('.menu_icon')
 if (iconMenu) {
-    const menuBody = document.querySelector('.menu-body')
-    const menuStart = document.querySelector('.jc-start')
+    const menuBody = document.querySelector('.menu_body')
+    const menuStart = document.querySelector('.jc_start')
+    const menuHeader = document.querySelector('.header__wrap')
     iconMenu.addEventListener('click', function(e) {
-        menuStart.classList.toggle('_active')
-        iconMenu.classList.toggle('_active')
-        menuBody.classList.toggle('_active')
+        menuHeader.classList.toggle('__active')
+        menuStart.classList.toggle('__active')
+        iconMenu.classList.toggle('__active')
+        menuBody.classList.toggle('__active')
     })
 }
